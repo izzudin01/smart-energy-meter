@@ -1,6 +1,9 @@
 # smart-energy-meter
 This project involves the development of a Smart Energy Meter using an ESP32 microcontroller, a PZEM-004T energy monitoring sensor, a relay, and a web server. The system is designed to provide real-time monitoring and control of electrical energy consumption. The ESP32 collects data from the PZEM-004T sensor, which measures voltage, current, power, and energy consumption. This data is then sent to a web server, where users can remotely access and monitor their energy usage through a user-friendly interface. Additionally, the relay allows for remote control of connected electrical appliances, enabling users to reduce their energy consumption efficiently.
 
+## Schematic Diagram
+![schematic diagram](https://github.com/izzudin01/smart-energy-meter/blob/main/Schematic%20Diagram.jpg)
+
 ### Objectives
 - Accurate Energy Monitoring: Utilize the PZEM-004T sensor to measure voltage, current, power, and energy consumption with high precision.
 - Remote Data Access: Implement a web server on the ESP32 to display real-time energy metrics and historical data through a user-friendly web interface.
@@ -24,13 +27,18 @@ This project involves the development of a Smart Energy Meter using an ESP32 mic
 - Integrate the relay module with the ESP32 for controlling appliances.
 - Power the system and ensure stable connections for accurate measurements.
 
+![real circuit](https://github.com/izzudin01/smart-energy-meter/blob/main/Real%20Circuit.jpg)
+
 *Software Development*:
 - Program the ESP32 to read data from the PZEM-004T and control the relay.
 - Develop a web server on the ESP32 to display data and provide control options.
-- Implement data logging and visualization features for historical analysis.
 - Set up alert mechanisms for abnormal energy usage.
+  
+![webserver](https://github.com/izzudin01/smart-energy-meter/blob/main/Screenshot%202023-12-16%20230352.png)
 
 *Testing and Deployment*:
 - Test the system for accuracy and reliability in different conditions.
 - Deploy the system in a real-world environment and gather user feedback.
 - Refine the system based on feedback to enhance performance and user experience.
+
+  ![test](https://github.com/izzudin01/smart-energy-meter/blob/main/Screenshot%202023-12-20%20214048.png)
