@@ -1,0 +1,114 @@
+<!DOCTYPE HTML><html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title> WebServer</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.click').click(function(){
+        $('.popup_box').css("display", "block");
+      });
+      $('.btns').click(function(){
+        $('.popup_box').css("display", "none");
+      });
+    });
+  </script>
+</head>
+
+
+  <img src="otomated.png" alt="" srcset="" style="width:1500px;height:125.75px;">
+  <body>
+
+  
+  <hr><br/>
+  <h2><br/>Dikembangkan oleh:<br/>
+      Kelompok 3<br/><ol>
+      Izzudin Al Ayyubi - 2006574780<br/>
+    Elisha Rachma Salsabila - 2106630183</ol> </h2>
+<br/>
+
+  <p>
+    <a href="#" class="click">Device Description</a>
+    <div class="popup_box">
+      <i class=="fas fa-exclamation"></i>
+      <p style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">
+        Sistem ini dirancang dengan tujuan utama untuk memantau dan mengukur konsumsi energi dalam arus, tegangan,
+        dan daya peralatan elektronik sehari-hari melalui teknologi IoT. Dengan menggunakan IoT, pengguna dapat 
+        memantau penggunaan energi dari jarak jauh secara real-time. Hasil akan ditampilkan melalui webserver.
+         Terdapat pula indikator - indikator seperti LED dan buzzer pada sistem.
+      </p>
+      <div class="btns">
+        <a href="#" class="btn1">Tutup</a>
+      </div>
+    </div>
+  </p>
+
+  <p class="energi">
+    <i class="fas fa-bolt" style = "color:#FFC300"></i>
+    <span style="font-family: Rowdies; font-size: 25pt;">Penggunaan Energi  : </span>
+    <span id="energi">%ENERGI%</span>
+    <span style="font-family: Rowdies; font-size: 25pt;">kWh</span>
+  </p>
+  
+
+
+  <div id="alert-box">
+    <div class="title-alert">
+        <img src="image.png" alt="" srcset="">
+        <h3>
+            Energi yang digunakan telah mencapai 0.5 kWh!
+        </h3>
+    </div>
+    <div class="btn-alert" >
+        <button type="button" onclick="closeForm()">
+            Close
+        </button>
+    </div>
+  </div>
+
+  <p class="parameter">
+		<span style="font-family: Rowdies; font-size: 20pt;">Penggunaan Daya : </span> <br/><br/><br/>
+		<span style ="font-family: Rowdies; font-size: 20pt;" id="daya">%DAYA%</span>
+		<span style="font-family: Rowdies; font-size: 20pt;">W</span>
+	</p>
+  
+  <div id="chart-daya" class="container"></div>
+
+
+  <p class="parameter">
+		<span style="font-family: Rowdies; font-size: 20pt;">Penggunaan Energi : </span> <br/><br/><br/>
+		<span style ="font-family: Rowdies; font-size: 20pt;"  id="energi1">%ENERGI%</span>
+		<span style="font-family: Rowdies; font-size: 20pt;">kWh</span>
+	</p>
+ 
+  <div id="chart-energi" class="container"></div>
+ 
+  <p class="parameter">
+		<span style="font-family: Rowdies; font-size: 20pt;">Penggunaan Tegangan : </span> <br/><br/><br/>
+		<span style ="font-family: Rowdies; font-size: 20pt;" id="tegangan">%TEGANGAN%</span>
+		<span style="font-family: Rowdies; font-size: 20pt;">V</span>
+	</p>
+  
+  <div id="chart-tegangan" class="container"></div>
+
+  <p class="parameter">
+		<span style="font-family: Rowdies; font-size: 20pt;">Penggunaan Arus : </span> <br/><br/><br/>
+		<span style ="font-family: Rowdies; font-size: 20pt;" id="arus">%ARUS%</span>
+		<span style="font-family: Rowdies; font-size: 20pt;">A</span>
+	</p>
+  
+  <div id="chart-arus" class="container"></div>
+
+  </br>
+  <script src="chart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+
+body {
+	width:98%;
+    height: 98%;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+
+h6 {
+  width: 100%;
+    font-family: "Poppins";
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    font-size: 50pt;
+    color:black;
+    text-align: center;
+    margin-bottom: 0;
+}  
+h1 {
+    width: auto;
+    font-family: "Garamond";
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    font-size: 35pt;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 0;
+  }
+h2{
+    width: auto;
+    font-family: "Garamond";
+    border-style: solid;
+    font-style: initial;
+    font-size: 20pt;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+.italic{
+    font-style: italic;
+  }
+
+h3 {
+    font-family:"Lato";
+    font-size: 18pt;
+    text-align: left;
+    color:rgb(240, 240, 240);      
+  }
+  p {font-size: 2.5rem;
+    font-family:monospace;
+    text-align: center;
+    ;
+    }
+
+.energi{
+    color:rgb(255, 241, 87);
+    font-family: "Lato";
+  }
+	
+.parameter{
+  position: absolute;
+  left: 66%;
+  right: 1px;
+  width: 33%;
+  height: 350px;
+  color:rgb(255, 241, 87);
+  font-family: "Lato";
+  background-color: rgb(135, 135, 135);
+  margin-top: 0px;
+  }
+
+.highcharts-background{
+    fill: rgb(135, 135, 135);
+}
+
+.container{
+  padding-bottom: 20pt;
+	display: flex;
+	flex-wrap: wrap;
+	width: 65%;
+	height: 350px;
+	margin-bottom: 10px;
+	justify-content: center;
+}
+
+.click, .popup_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.click{
+  background: rgb(255, 241, 87);
+  color: rgb(106, 106, 106);
+  font-size: 22px;
+  font-family: arial;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid rgb(255, 241, 87);
+  display: block;
+  margin-left: 50%;
+  width: 22%;
+  height: 42%;
+  position: static;
+}
+
+.popup_box{
+  width: 1000px;
+  background: #f2f2f2;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  z-index: 9999;
+  display: none;
+
+}
+
+.popup_box h1{
+  font-size: 30px;
+  color: #1b2631;
+  margin-bottom: 5px;
+}
+
+.popup_box .btns{
+  margin: 40px 0 0 0;
+}
+.btns .btn1{
+  background: #999999;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 10px 13px;
+}
+
+.temps{
+  background: #999999;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 10px 13px;
+}
+
+.click:hover{
+  transition: .5s;
+  background: #ffd900;
+}
+
+.btns .btn1:hover{
+  transition: .5s;
+  background: #8c8c8c;
+}
+
+
+#clock{
+  grid-area: clock;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-style: solid;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#time{
+  display: flex;
+  font-size: auto;
+    margin-left: auto;
+  margin-right: auto;
+   padding:auto;
+}
+
+#time img{
+ display: block;
+  margin-left: 18%;
+  width: 22%;
+  height: 22%;
+  position: static;
+}
+
+#time div{
+  margin-right: 5px;
+}
+
+#clock h4 {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-transform: 0.4em;
+  font-size: 2vw;
+}
+
+#alert-box{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  height: 50vh;
+  width: 40vw;
+  z-index: 10;
+  left: 30vw;
+  bottom: 25vh;
+  align-items: center;
+  background-color: rgb(245, 214, 79);
+  border-radius: 5px;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+
+
+.title-alert{
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  padding: 0px 50px;
+  margin: 0px;
+}
+
+.title-alert h3{
+  font-size: 1.4vw;
+  color: black;
+}
+
+.btn-alert button{
+  font-size: 20px;
+  padding: 10px 70px;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-family: Poppins;
+  margin: 0px;
+}
+
+.title-alert img{
+  width: 8vw;
+}
+
+.btn-alert button:hover{
+  transition: 0.5s;
+  transform: translateY(-10px);
+  background-color: rgb(129, 116, 0);
+  color: rgb(233, 233, 233);
+}
+
+
